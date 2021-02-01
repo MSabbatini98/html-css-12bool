@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* DEBUG MANUALE */
+.debug{
+    border: 1px dotted black;
+}
+
+/* DEBUG AUTOMATICO */
+/* [class*="col-"] {
+    height: 123px;
+    border: 1px solid blue;
+} */
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* !!!!!!!!!!!!!! Actual columns */
+[class*='col-'] {
+    float: left;
+    background-color: dodgerblue;
+}
+
+.col-1 {
+    width: calc((100%/12)*1);
+}
+.col-2 {
+    width: calc((100%/12)*2);
+}
+.col-3 {
+    width: calc((100%/12)*3);
+}
+.col-4 {
+    width: calc((100%/12)*4);
+}
+.col-5 {
+    width: calc((100%/12)*5);
+}
+.col-6 {
+    width: calc((100%/12)*6);
+}
+.col-7 {
+    width: calc((100%/12)*7);
+}
+.col-8 {
+    width: calc((100%/12)*8);
+}
+.col-9 {
+    width: calc((100%/12)*9);
+}
+.col-10 {
+    width: calc((100%/12)*10);
+}
+.col-11 {
+    width: calc((100%/12)*11);
+}
+.col-12 {
+    width: calc((100%/12)*12);
+}
+
+/******** OFF-SET(margins) *********/
+.off-set-col-1 {
+    width: calc((100%/12)*1);
+}
+.off-set-col-2 {
+    width: calc((100%/12)*2);
+}
+.off-set-col-3 {
+    width: calc((100%/12)*3);
+}
+.off-set-col-4 {
+    width: calc((100%/12)*4);
+}
+.off-set-col-5 {
+    width: calc((100%/12)*5);
+}
+.off-set-col-6 {
+    width: calc((100%/12)*6);
+}
+.off-set-col-7 {
+    width: calc((100%/12)*7);
+}
+.off-set-col-8 {
+    width: calc((100%/12)*8);
+}
+.off-set-col-9 {
+    width: calc((100%/12)*9);
+}
+.off-set-col-10 {
+    width: calc((100%/12)*10);
+}
+.off-set-col-11 {
+    width: calc((100%/12)*11);
+}
+.off-set-col-12 {
+    width: calc((100%/12)*12);
+}
